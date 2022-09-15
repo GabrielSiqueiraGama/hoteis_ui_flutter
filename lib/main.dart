@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hoteis_ui/pages/home.dart';
 
 void main() {
   runApp(const MyApp());
@@ -32,20 +33,6 @@ class MyHomePage extends StatefulWidget {
 class _MyHomePageState extends State<MyHomePage> {
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: Text(widget.title),
-      ),
-      body: Center(
-        child: Column(
-          mainAxisAlignment: MainAxisAlignment.center,
-          children: const <Widget>[
-            Text(
-              'Hotel trivago:',
-            ),
-          ],
-        ),
-      ),
-    );
+    return Home();
   }
 }
