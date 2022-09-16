@@ -20,7 +20,7 @@ class Hotel {
   });
 }
 
-final List<Hotel> hotels = [
+final List<Hotel> hoteis = [
   Hotel(
       imageUrl: 'assets/images/predio01.png',
       nome: 'Hotel bacana',

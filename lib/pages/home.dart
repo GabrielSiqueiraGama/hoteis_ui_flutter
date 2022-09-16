@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 
+import '../widgets/carrosel_hotel.dart';
+
 class Home extends StatelessWidget {
   const Home({super.key});
   @override
@@ -58,6 +60,8 @@ class Home extends StatelessWidget {
                     ),
                   ]),
             ),
+            const SizedBox(height: 20),
+            CarroselHotel(),
           ],
         ),
       ),
