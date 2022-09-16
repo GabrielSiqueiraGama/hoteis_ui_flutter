@@ -30,7 +30,7 @@ class Home extends StatelessWidget {
                     Row(
                       children: const <Widget>[
                         Icon(
-                          Icons.place_outlined,
+                          Icons.place,
                           color: Colors.green,
                           size: 25,
                         ),
