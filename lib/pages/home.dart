@@ -61,7 +61,43 @@ class Home extends StatelessWidget {
                   ]),
             ),
             const SizedBox(height: 20),
-            CarroselHotel(),
+            const CarroselHotel(),
+            Column(
+              children: <Widget>[
+                Padding(
+                  padding: const EdgeInsets.symmetric(horizontal: 20),
+                  child: Column(
+                    children: <Widget>[
+                      Row(
+                        mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                        children: <Widget>[
+                          const Text(
+                            'Proximo de você.',
+                            style: TextStyle(
+                                fontSize: 20,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.black54),
+                          ),
+                          GestureDetector(
+                            // ignore: avoid_print
+                            onTap: () => print("Ver todos"),
+                            child: Text(
+                              'Ver todos',
+                              style: TextStyle(
+                                fontSize: 15,
+                                fontWeight: FontWeight.bold,
+                                color: Colors.green.shade900,
+                                decoration: TextDecoration.underline,
+                              ),
+                            ),
+                          )
+                        ],
+                      ),
+                    ],
+                  ),
+                ),
+              ],
+            ),
           ],
         ),
       ),

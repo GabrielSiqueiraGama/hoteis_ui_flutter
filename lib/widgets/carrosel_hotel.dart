@@ -28,6 +28,7 @@ class _CarroselHotelState extends State<CarroselHotel> {
                         color: Colors.black54),
                   ),
                   GestureDetector(
+                    // ignore: avoid_print
                     onTap: () => print("Ver todos"),
                     child: Text(
                       'Ver todos',
@@ -45,7 +46,7 @@ class _CarroselHotelState extends State<CarroselHotel> {
           ),
         ),
         const SizedBox(height: 15),
-        Container(
+        SizedBox(
           height: 300,
           child: ListView.builder(
             scrollDirection: Axis.horizontal,
